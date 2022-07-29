@@ -285,7 +285,7 @@ color: var(--accent-txt-cl)
         
 }
 
-.hero-btn{
+.hero-btn, .footer-btn{
 
     min-width: 200px;
     height: 50px;
@@ -736,6 +736,7 @@ font-family:var(--secondary-font);
 }
 
 .footer-right {
+    margin-right: 93px;
     width: 206px;
     display: flex;
     align-items: baseline;
@@ -757,6 +758,22 @@ font-family:var(--secondary-font);
 }
 
 
+.footer-form{
+width: 570px;
+}
+
+.footer-btn{
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.footer-link-tg{
+
+    padding-left: 10px;
+        
+        transition: 250ms var(--cubiс-fix);
+}
 
 
 .svg-links-footer {
