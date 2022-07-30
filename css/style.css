@@ -383,7 +383,8 @@ transition: 250ms var(--cubiс-fix);
         border-radius: 4px;
 }
 
-.form-item>input:hover{
+.form-item>input:hover,
+.form-item>input:focus {
     border: 1px solid var(--accent-txt-cl);
         border-radius: 4px;
         cursor: pointer;
@@ -397,7 +398,8 @@ transition: 250ms var(--cubiс-fix);
         border-radius: 4px;
 }
 
-.form-item>textarea:hover {
+.form-item>textarea:hover,
+.form-item>textarea:focus {
     border: 1px solid var(--accent-txt-cl);
     border-radius: 4px;
 }
@@ -422,15 +424,57 @@ textarea{
 }
 
 .form-conform{
+    position: relative;
     padding-left: 40px;
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
-.form-information>textarea::placeholder{
-    color: rgba(117, 117, 117, 0.5);
+/* .conform-svg{
+
+    position: absolute;
+   left: 50px;
+   top: 1px;
+   opacity: 0;
+
+
+
+} */
+
+
+/* .conform-svg:active {
+    opacity: 0;
+    
+
+} */
+
+/* .conform-svg-bg{
+    position: absolute;
+    left: 50px;
+    top: 1px;
+    opacity: 0;
+    
+   
+} */
+
+/* .conform-svg-bg:active{
+    
+    opacity: 1;
+    
+} */
+
+textarea::placeholder{
+    font-family: var(--secondary-font);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14px;
+        letter-spacing: 0.01em;
+    
+        color: rgba(117, 117, 117, 0.5);
+    
 }
 
 .backdrop{
@@ -485,7 +529,8 @@ transition: 250ms var(--cubiс-fix);
     cursor: pointer ;
     transition: 250ms var(--cubiс-fix);
 }
-.modal-btm:hover{
+.modal-btm:hover,
+.modal-btm:focus {
     color: var(--accent-txt-cl);
 }
 
