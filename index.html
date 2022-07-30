@@ -70,11 +70,47 @@
     </div>
 </section>
 <div data-modal class="backdrop is-hidden">
-    <div class="modal">
+    <form action="" class="modal" autocomplete="on">
+        <div class="form-cnt">
+            <h2 class="title-form">Оставьте свои данные, мы вам перезвоним</h2>
+            <div class="form-information">
+                <label class="form-text-decoration" for="name">Имя</label>
+                <svg width="18" height="18" class="form-svg">
+                    <use href="/image/icon.svg#icon-person" class="svg-icon"></use>
+                </svg>
+                <input type="text" name="name" id="name" autocomplete="name">
+
+                <label class="form-text-decoration" for="tel">Телефон</label>
+                <svg width="18" height="18" class="form-svg">
+                    <use href="/image/icon.svg#icon-phone" class="svg-icon"></use>
+                </svg>
+                <input type="tel" name="tel" id="tel" autocomplete="tel">
+
+                <label class="form-text-decoration" for="mail">Почта</label>
+                <svg width="18" height="18" class="form-svg">
+                    <use href="/image/icon.svg#icon-email" class="svg-icon"></use>
+                </svg>
+                <input type="email" name="mail" id="mail" autocomplete="email">
+
+                <label class="form-text-decoration" for="coment">Комментарий</label>
+                <textarea name="text" rows="8" id="coment" autocomplete="off" placeholder="Введите текст"></textarea>
+            </div>
+
+            <div class="form-conform">
+                <p class="form-text-decoration"><input type="checkbox" name="contract" value="yes" id="contract">
+                <label for="contract"> Соглашаюсь с рассылкой и принимаю
+                    <a target="_blank" rel="noreferrer noopener" href="#">Условия договора</a>
+                </label></p>
+                <button type="submit" class="form-btn"> Отправить</button>
+            </div>
+            
+
+
+        </div>
+        
         <button class="modal-btm" data-modal-close>🞪
         </button>
-
-    </div>
+    </form>
 </div>
 
 
@@ -547,22 +583,27 @@
                         </a>
                     </li>
                 </ul>
-            <div class="footer-form">
-                <h3 class="footer-advantege-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
-                <form class="footer-form-cnt">
-                    <label for="mail">E-mail</label>
-                    <input type="email" name="" id="mail">
-                </form>
-
-                <button type="submit" class="footer-btn">Подписаться
-                    
-                        
-                        <svg class="footer-link-tg" width="34px" height="34px">
-                            <use href="./image/icon.svg#icon-icon-send"></use>
-                        </svg>
-                    
-                </button>
+            
             </div>
+            <div class="footer-form">
+                <form class="footer-form-cnt">
+                    <div class="form-cnt-mail">
+                        <h3 class="footer-advantege-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+                        
+                        <input type="email" placeholder="E-mail" name="email" >
+                    </div>
+                    <div>
+                        <button type="submit" class="footer-btn">Подписаться
+                        
+                        
+                            <svg class="footer-link-tg" width="34px" height="34px">
+                                <use href="./image/icon.svg#icon-icon-send"></use>
+                            </svg>
+                        
+                        </button>
+                    </div>
+                </form>
+            
             </div>
         </div>
     </footer>
