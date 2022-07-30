@@ -433,38 +433,38 @@ textarea{
     overflow: hidden;
 }
 
-/* .conform-svg{
+.conform-svg{
 
     position: absolute;
    left: 50px;
    top: 1px;
-   opacity: 0;
+   opacity: 1;
 
 
 
-} */
+}
 
 
-/* .conform-svg:active {
+.conform-svg:active {
     opacity: 0;
     
 
-} */
+}
 
-/* .conform-svg-bg{
+.conform-svg-bg{
     position: absolute;
     left: 50px;
     top: 1px;
-    opacity: 0;
+    opacity: 1;
     
    
-} */
+}
 
-/* .conform-svg-bg:active{
+.conform-svg-bg:active{
     
     opacity: 1;
     
-} */
+}
 
 textarea::placeholder{
     font-family: var(--secondary-font);
