@@ -65,6 +65,20 @@ input,textarea{
     outline: none;
 }
 
+.visualy-hidden{
+
+    position: absolute;
+    white-space:nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 .container {
     width: 1200px;
     margin-left: auto;
@@ -416,6 +430,8 @@ transition: 250ms var(--cubiс-fix);
     font-size: 14px;
     color:var(--secondary-txt-cl);
     letter-spacing: 0.03em;
+    user-select: none;
+    text-underline-position:under;
 }
 
 
@@ -433,38 +449,37 @@ textarea{
     overflow: hidden;
 }
 
-.conform-svg{
+
+.conform-svg-icon{
 
     position: absolute;
-   left: 50px;
-   top: 1px;
-   opacity: 1;
-
-
-
-}
-
-
-.conform-svg:active {
-    opacity: 0;
-    
-
-}
-
-.conform-svg-bg{
-    position: absolute;
-    left: 50px;
-    top: 1px;
-    opacity: 1;
-    
+   left: 40px;
+   top: 0px;
    
+
+}
+.conform-svg-uncheck{
+    opacity: 1;
+}
+.conform-svg-check{
+    opacity: 0;
 }
 
-.conform-svg-bg:active{
-    
-    opacity: 1;
-    
+.conform-checkbox:checked + .conform-svg-icon .conform-svg-uncheck{
+    opacity: 0;
+transition: 250ms var(--cubiс-fix);
 }
+
+.conform-checkbox:checked + .conform-svg-icon .conform-svg-check{
+    opacity: 1;
+transition: 250ms var(--cubiс-fix);
+}
+
+
+
+
+
+
 
 textarea::placeholder{
     font-family: var(--secondary-font);

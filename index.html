@@ -71,7 +71,7 @@
 </section>
 <div data-modal class="backdrop is-hidden">
     <form action="" class="modal" autocomplete="on">
-        <div class="form-cnt">
+        <div class="form-cnt" role="group">
             <h2 class="title-form">Оставьте свои данные, мы вам перезвоним</h2>
             <div class="form-information">
                 <div class="form-item">
@@ -108,18 +108,18 @@
 
             <div class="form-conform">
 
-                <svg width="16" height="15" class="conform-svg-bg">
-                    <use href="/image/icon.svg#icon-bgc-border"></use>
-                </svg>
-                <svg width="16" height="15" class="conform-svg">
-                    <use href="/image/icon.svg#icon-Vector"></use>
-                </svg>
-                <p class="form-text-decoration"><input disabled type="checkbox" name="contract" value="yes" id="contract">
                 
+                <p class="form-text-decoration"><input class="conform-checkbox visualy-hidden"  type="checkbox" name="contract" value="yes" id="contract">
+                    <svg width="16" height="15" class="conform-svg-icon">
+                        <use class="conform-svg-uncheck" href="/image/icon.svg#icon-Vector"></use>
+                        <use class="conform-svg-check" href="/image/icon.svg#icon-bgc-border"></use>
+                
+                    </svg>
                 
                     <label for="contract"> Соглашаюсь с рассылкой и принимаю
-                    <a target="_blank" rel="noreferrer noopener" href="#">Условия договора</a>
-                </label></p>
+                        <a target="_blank" rel="noreferrer noopener" href="#">Условия договора</a>
+                    </label>
+                </p>
                 <button type="submit" class="form-btn"> Отправить</button>
             </div>
             
