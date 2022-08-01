@@ -978,6 +978,11 @@ display: flex;
 }
 
 .form-cnt-mail>input{
+    font-family:var(--secondary-font);
+        
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
     width: 358px;
     padding-left: 16px;
     padding-top: 16px;
@@ -1027,6 +1032,19 @@ justify-content: center;
     padding-left: 10px;
         
         transition: 250ms var(--cubiс-fix);
+}
+
+.contract-link{
+    font-family: var(--secondary-font);
+        
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1,71;
+        
+        letter-spacing: 0.03em;
+       
+    
+        color:var(--accent-txt-cl)
 }
 
 
