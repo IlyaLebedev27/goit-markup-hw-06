@@ -558,6 +558,7 @@ transition: 250ms var(--cubiс-fix);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer ;
+    background-color: var(--wight-txt-cl);
     transition: 250ms var(--cubiс-fix);
 }
 .modal-btm:hover,
