@@ -493,7 +493,23 @@ transition: 250ms var(--cubiс-fix);
 
 
 
+.btn-svg-uncheck {
+    opacity: 1;
+}
 
+.btn-svg-check {
+    opacity: 0;
+}
+
+.modal-btm:hover + .btn-svg-decoration .btn-svg-uncheck {
+    opacity: 0;
+    transition: 250ms var(--cubiс-fix);
+}
+
+.modal-btm:hover + .btn-svg-decoration .btn-svg-check {
+    opacity: 1;
+    transition: 250ms var(--cubiс-fix);
+}
 
 
 
@@ -551,6 +567,7 @@ transition: 250ms var(--cubiс-fix);
 
 
 .modal-btm{
+
     width: 30px;
     height: 30px;
     margin-top: 8px;
@@ -564,6 +581,12 @@ transition: 250ms var(--cubiс-fix);
 .modal-btm:hover,
 .modal-btm:focus {
     color: var(--accent-txt-cl);
+}
+
+.btn-svg-decoration{
+    position: absolute;
+    right:15px;
+    top: 15px;
 }
 
 
