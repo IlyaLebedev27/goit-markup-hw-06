@@ -490,7 +490,12 @@ transition: 250ms var(--cubiс-fix);
 
 
 
-
+.conform-svg-icon:hover,
+.conform-svg-icon:focus,
+.conform-svg-icon:active {
+    fill: var(--accent-txt-cl);
+    transition: 250ms var(--cubiс-fix);
+}
 
 
 
