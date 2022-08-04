@@ -183,18 +183,7 @@ align-items: center;
     margin-right: 51px;
 }
 
-/* .header-link
- {
-    
-    font-family:var(--secondary-font);
-    font-style: normal;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color:var(--main-txt-cl)
-} */
  .header-link:hover,
  .header-link:focus,
  .header-link:active {
@@ -388,7 +377,7 @@ transition: 250ms var(--cubiс-fix);
     cursor: pointer;
 }
 
-.form-item>input{
+.form-input{
     margin-bottom: 10px;
     padding: 11px;
     padding-right: 12px;
@@ -397,8 +386,8 @@ transition: 250ms var(--cubiс-fix);
         border-radius: 4px;
 }
 
-.form-item>input:hover,
-.form-item>input:focus {
+.form-input:hover,
+.form-input:focus {
     border: 1px solid var(--accent-txt-cl);
         border-radius: 4px;
         cursor: pointer;
@@ -406,21 +395,19 @@ transition: 250ms var(--cubiс-fix);
 
 
 
-.form-item>textarea{
+.form-textarea{
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
 }
 
-.form-item>textarea:hover,
-.form-item>textarea:focus {
+.form-textarea:hover,
+.form-textarea:focus {
     border: 1px solid var(--accent-txt-cl);
     border-radius: 4px;
 }
 
-.form-conform>p{
-    margin-bottom: 30px;
-}
+
 .form-text-decoration{
     
     margin-bottom: 4px;
@@ -435,6 +422,7 @@ transition: 250ms var(--cubiс-fix);
 }
 
 .decoration-txt-conform{
+    margin-bottom: 30px;
     font-family: var(--secondary-font);
         font-style: normal;
         font-weight: 400;
@@ -493,23 +481,16 @@ transition: 250ms var(--cubiс-fix);
 
 
 
-.btn-svg-uncheck {
-    opacity: 1;
+.btn-svg-decoration:hover,
+.btn-svg-decoration:focus,
+.btn-svg-decoration:active {
+    fill: var(--accent-txt-cl);   
+transition: 250ms var(--cubiс-fix);
 }
 
-.btn-svg-check {
-    opacity: 0;
-}
 
-.modal-btm:hover + .btn-svg-decoration .btn-svg-uncheck {
-    opacity: 0;
-    transition: 250ms var(--cubiс-fix);
-}
 
-.modal-btm:hover + .btn-svg-decoration .btn-svg-check {
-    opacity: 1;
-    transition: 250ms var(--cubiс-fix);
-}
+
 
 
 
@@ -1127,6 +1108,7 @@ font-family: var(--secondary-font);
  color:var(--main-txt-cl);
 transition: 250ms var(--cubiс-fix);
     border-radius: 4px;
+    background-color: var(--wight-bg-cl);
 
 }
 
@@ -1142,7 +1124,7 @@ transition: 250ms var(--cubiс-fix);
 }
 
 .selector-button {
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: center;
     
